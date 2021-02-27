@@ -4,7 +4,7 @@ import PropType from "prop-types";
 
 const BootstrapCard = props => {
 	// 1) replace the hard-coded image, description, link, etc. With their property variable.
-	return (
+	 return (
 		<div className="card m-5">
 			<img className="card-img-top" src="https://ucarecdn.com/f8cf81eb-3bab-4bba-9431-668884eab174/-/resize/300x/" alt="Card image cap" />
 			<div className="card-body">
@@ -19,8 +19,11 @@ const BootstrapCard = props => {
 };
 BootstrapCard.propTypes = {
 	title: PropType.string
-		// 2) add here the new properties into the proptypes object
+    // 2) add here the new properties into the proptypes object
+    imageUrl: PropType.string
+    description: PropType.string
+    buttonUrl: PropType.string
+    buttonLabel: PropType.string
 };
-
 
 // 3) Use ReactDOM to add the component into then DOM element #myDiv
